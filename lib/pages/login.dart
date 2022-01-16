@@ -26,6 +26,7 @@ class LogIn extends StatelessWidget {
                 ),
               ),
               Container(
+                alignment: Alignment.topLeft,
                 padding: EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,6 +36,7 @@ class LogIn extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 36,
                         color: Color(0xFF008827),
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Row(
@@ -44,6 +46,7 @@ class LogIn extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 36,
                             color: Color(0xFF008827),
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         SizedBox(
@@ -54,18 +57,16 @@ class LogIn extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 36,
                             color: Color(0xFF384529),
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(
-                      height: 5,
-                    ),
                     Align(
                       alignment: const Alignment(0.6, -0.1),
                       child: Container(
-                        height: 60,
-                        width: 60,
+                        height: 40,
+                        width: 40,
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           color: Color(0xFF384529),
@@ -79,8 +80,8 @@ class LogIn extends StatelessWidget {
                     Align(
                       alignment: const Alignment(0.1, -0.1),
                       child: Container(
-                        height: 60,
-                        width: 60,
+                        height: 40,
+                        width: 40,
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           color: Color(0xFF008827),
@@ -111,9 +112,12 @@ class LogIn extends StatelessWidget {
                           width: 200,
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               'Log In',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             style: ElevatedButton.styleFrom(
                                 primary: Color(0xFF008827),
@@ -136,11 +140,12 @@ class LogIn extends StatelessWidget {
                             ),
                             TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   'Sign In',
                                   style: TextStyle(
                                     color: Color(0xFF008827),
                                     fontSize: 13,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 )),
                           ],

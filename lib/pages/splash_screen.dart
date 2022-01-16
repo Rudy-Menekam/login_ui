@@ -20,7 +20,8 @@ class SplashScreen extends StatelessWidget {
       textColor($onPrimary),
       font(
         color: Colors.white,
-        size: 28,
+        size: 36,
+        weight: FontWeight.bold,
       ),
       press(
         scale(0.9),

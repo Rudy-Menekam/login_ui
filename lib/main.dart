@@ -17,7 +17,7 @@ class LoginUI extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LogIn(),
+      home: SignUp(),
       routes: {
         // 'login': (context) => LogIn(),
         'signup': (context) => SignUp(),
